@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="./main.js" defer></script>
     <script src="./wallet.js" defer></script>
-    
-
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <div class="logo">PropertyLink</div>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" id="closeSidebar">&times;</a>
         <nav>
             <ul>
                 <li><a href="./FMA.html">Find my Agent</a></li>
@@ -25,6 +23,12 @@
                 <li><a href="./login1.html">Login</a></li>
             </ul>
         </nav>
+    </div>
+
+    <!-- Open Sidebar Button -->
+    <header>
+        <div class="logo">PropertyLink</div>
+        <button class="open-sidebar-btn" id="openSidebar">&#9776;</button>
     </header>
 
     <!-- Hero Section -->
@@ -60,6 +64,20 @@
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </footer>
+
+    <script>
+        // JavaScript for Sidebar Toggle
+        const sidebar = document.getElementById('sidebar');
+        const openSidebarBtn = document.getElementById('openSidebar');
+        const closeSidebarBtn = document.getElementById('closeSidebar');
+
+        openSidebarBtn.addEventListener('click', () => {
+            sidebar.style.width = '250px';
+        });
+
+        closeSidebarBtn.addEventListener('click', () => {
+            sidebar.style.width = '0';
+        });
+    </script>
 </body>
 </html>
-
