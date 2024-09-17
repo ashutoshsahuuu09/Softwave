@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find My Agent - Estate Management</title>
+  <link rel="stylesheet" href="fma1.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Find My Agent</h1>
+      <p>Your trusted platform for estate management and property transitions.</p>
+    </header>
+    
+    <section class="search-section">
+      <h2>Find an Estate Agent</h2>
+      <input type="text" id="searchAgent" placeholder="Enter city or agent's name">
+      <button onclick="findAgent()">Search</button>
+    </section>
+
+    <section class="agent-list">
+      <h2>Available Agents</h2>
+      <div id="agentResults"></div>
+    </section>
+    
+    <section class="learn-section">
+      <h2>Learn About Property Transactions</h2>
+      <p>Managing estates and transitioning properties has never been easier. Our platform allows buyers, sellers, and agents to securely and efficiently manage their properties.</p>
+      <button onclick="showMore()">Read More</button>
+      <div id="moreInfo" style="display:none;">
+        <p>We provide comprehensive estate management solutions including:</p>
+        <ul>
+          <li>Property Listings and Sales</li>
+          <li>Legal Documentation Support</li>
+          <li>Smart Contract-based Transactions</li>
+          <li>Decentralized Land Registry System</li>
+        </ul>
+      </div>
+    </section>
+    
+  </div>
+
+  <script src="fma2.js"></script>
+</body>
+</html>

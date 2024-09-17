@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockchain Transaction</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .container { width: 50%; margin: 100px auto; text-align: center; }
+    input, button { padding: 10px; margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Submit a Blockchain Transaction</h1>
+    <input type="text" id="recipient" placeholder="Recipient Address"><br>
+    <input type="text" id="amount" placeholder="Amount in ETH"><br>
+    <button onclick="sendTransaction()">Send Transaction</button>
+    <p id="status"></p>
+  </div>
+
+  <!-- Include Ethers.js and Link to Your JS File -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+  <script src="transaction.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find My Agent - Market Intelligence</title>
+  <link rel="stylesheet" href="./MI2.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Market Intelligence</h1>
+      <p>Stay informed with the latest trends in real estate and property transitions.</p>
+    </header>
+
+    <section class="market-overview">
+      <h2>Market Overview</h2>
+      <div id="marketOverviewData">
+        <!-- Market overview data will be dynamically loaded here -->
+      </div>
+    </section>
+
+    <section class="price-analysis">
+      <h2>Price Trends & Analysis</h2>
+      <p>Check current property price trends for better decision making.</p>
+      <div class="analysis-container">
+        <label for="citySelect">Select a City: </label>
+        <select id="citySelect" onchange="loadPriceTrends()">
+          <option value="">-- Select City --</option>
+          <option value="new-york">Ranchi</option>
+          <option value="san-francisco">Luknow</option>
+          <option value="chicago">Angul</option>
+          <option value="miami">Cuttak</option>
+        </select>
+      </div>
+      <div id="priceTrendData">
+        <!-- Price trend data will be dynamically loaded here -->
+      </div>
+    </section>
+  </div>
+
+  <script src="market-intelligence.js"></script>
+</body>
+</html>
